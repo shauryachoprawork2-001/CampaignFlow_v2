@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CampaignFlow: run server",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/run.py",
+      "cwd": "${workspaceFolder}/backend",
+      "env": { "CF_SIMULATE": "1" },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "CampaignFlow: seed demo data (reset)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/seed.py",
+      "args": ["--reset"],
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal"
+    }
+  ]
+}
